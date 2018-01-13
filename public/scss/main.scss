@@ -1,0 +1,18 @@
+$badass: #bada55;
+body {
+  margin: 0;
+  background-color: $badass;
+}
+
+.center{
+    text-align: center;
+    padding-top: 20%;
+    button {
+      &:hover {
+        background-color: red;
+      }
+      // padding: 14px 40px;
+      // display: block
+      margin-bottom: 10%;
+    }
+}

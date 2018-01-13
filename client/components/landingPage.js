@@ -11,9 +11,11 @@ class LandingPage extends Component {
 
     render() {
       return (
-        <div className="center">
-          <h1>landing Page</h1>
-          <button>Users</button>
+        <div className="container center">
+          <div className="btn-group-vertical">
+            <button type="button" className="btn btn-primary btn-lg">Client</button>
+            <button type="button" className="btn btn-primary btn-lg">Customers</button>
+          </div>
         </div>
       )
 
