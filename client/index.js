@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose} from 'redux';
 import jwt from 'jsonwebtoken';
 import rootReduce from './reducers/rootReducer';
-import LandingPage from './components/landingPage.js';
+import App from './components/app.js';
 
 
 // const store = createStore(
@@ -27,6 +27,6 @@ import LandingPage from './components/landingPage.js';
 
 
 render(
-        <LandingPage />
+        <App />
     , document.getElementById('app')
 );
