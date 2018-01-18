@@ -9,6 +9,8 @@ import webpackConfig from '../webpack.config';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import config from './config'
+import sendform from './routes/sendform';
+// import './database';
 
 
 let app = express();
@@ -42,7 +44,7 @@ app.use(webpackHotMiddleware(compiler));
 // parse data from request body ==> use bodyParser middleware
 
 // match url, then apply the middleware
-
+app.use('/api/sendform', sendform);
 
 
 app.get('/*', (req, res) => {
