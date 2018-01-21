@@ -31,9 +31,8 @@
 }
 
 .center-login {
-  position: absolute;
+  position: relative;
   text-align: center;
-  margin-left: 35%;
 }
 
 .login-page-block {
@@ -52,6 +51,7 @@
 
 .login-block {
   display: inline-block;
+  margin-left: 32%;
 }
 
 .btn-group {
@@ -123,4 +123,43 @@ button.remove-button:hover {
 
 .send-btn-form {
   margin-left: 45%;
+}
+
+.bgimg {
+  background-image: url("http://www.enliveningedge.org/wp-content/uploads/2016/06/FI-maybe-Rainbow-Colors-Abstract-Wallpapers.jpg");
+  height: 500px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.parallax {
+  position: relative;
+  /* The image used */
+  background-image: url("http://www.enliveningedge.org/wp-content/uploads/2016/06/FI-maybe-Rainbow-Colors-Abstract-Wallpapers.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax div {
+  padding-top: 200px;
+}
+
+.dummy {
+  position: relative;
+  background-image: url("");
+  font-size: 50px;
+  min-height: 400px;
+  text-align: center;
+}
+
+.dummy div {
+  padding-top: 200px;
 }
