@@ -51,13 +51,11 @@ app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Hey Prajith, server side get the restpassword request here!
-app.post('/resetpwd', (req, res) => {
-    console.log("Message for reset password ",req.body);
-});
 
 if (config.dev) {
   console.log(app.listen(9000, () => console.log('Running on localhost:9000')));
 } else {
   console.log(app.listen(80, () => console.log('Running on server which is public.')));
 }
+
+module.exports = app;
