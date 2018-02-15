@@ -8,15 +8,17 @@ import projectPage from './projects/projectPage2'
 import project from './projects/project'
 
 // App component
+// <Route path="/" component={landingPage}/>
+// <Route path="login" component={loginPage}/>
+// <Route path="signup" component={SignupPage}/>
+// <Route path="form" component={createForm}/>
+
 class App extends Component {
   render() {
     return (
       <div className="landing-page">
         <Router history={browserHistory}>
-            <Route path="/" component={landingPage}/>
-            <Route path="login" component={loginPage}/>
-            <Route path="signup" component={SignupPage}/>
-            <Route path="form" component={createForm}/>
+
             <Route path="projects" component={projectPage}/>
             <Route path="projects(/:name)" component={project}/>
         </Router>
