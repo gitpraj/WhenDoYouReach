@@ -4,6 +4,8 @@ import landingPage from './landingPage'
 import loginPage from './login/loginPage'
 import SignupPage from './signup/SignupPage'
 import createForm from './forms/createForm'
+import projectPage from './projects/projectPage2'
+import project from './projects/project'
 
 // App component
 class App extends Component {
@@ -15,6 +17,8 @@ class App extends Component {
             <Route path="login" component={loginPage}/>
             <Route path="signup" component={SignupPage}/>
             <Route path="form" component={createForm}/>
+            <Route path="projects" component={projectPage}/>
+            <Route path="projects(/:name)" component={project}/>
         </Router>
       </div>
     );

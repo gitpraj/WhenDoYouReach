@@ -1,0 +1,51 @@
+.project-desc {
+  h1 { color:  red;
+    // font-family: 'Righteous', cursive;
+    font-size: 45px;
+    font-weight: normal; line-height: 60px; margin: 10px 0 20px;
+    // text-transform: uppercase; text-shadow: 2px 2px 0 #000;
+    margin: 10px 0 24px; text-align: center; }
+
+
+  h2 { font-size: 30px; letter-spacing: -1px; color: black; text-transform: uppercase; text-shadow: 1px 1px 0 #000; margin: 10px 0 24px; text-align: center; line-height: 50px; }
+
+
+  p { color: black; font-family: 'Orienta', sans-serif; font-size: 16px; line-height: 24px; margin: 0 0 24px; text-align: justify;}
+
+
+  a { color: #e8d4a7; text-decoration: none; text-align: right; padding: 15px; font-size: 20px; }
+
+
+  a:hover { color: #da9650; text-decoration: blink; }
+
+  .img-project-desc {
+    img {
+      width: 80%;
+      height: 80%;
+      margin-left: auto;
+	margin-right: auto;
+	display: block;
+    }
+  }
+
+  .project-desc {
+    width: 70%;
+    /* text-align: right; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  dd {
+    margin-left: 30%;
+     font-family: 'Orienta', sans-serif; font-size: 16px; line-height: 24px;
+  }
+
+  dt {
+     margin-top: 10px;
+     font-family: 'Orienta', sans-serif; font-size: 16px; line-height: 24px;
+  }
+}
+
+// .project-desc-page {
+//   background-color: #8f1313;
+// }

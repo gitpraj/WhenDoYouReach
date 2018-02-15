@@ -41,6 +41,14 @@ export default {
                     path.join(__dirname, 'client/images'),
                 ],
                 loader: ['url-loader?limit=8192']
+            },
+            {
+                test: /\.json$/,
+                include: [
+                    path.join(__dirname, 'client'),
+                    path.join(__dirname, 'server')
+                ],
+                loaders: ['json-loader'],
             }
         ]
     },

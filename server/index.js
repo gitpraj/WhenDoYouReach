@@ -10,6 +10,7 @@ import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import config from './config'
 import sendform from './routes/sendform';
+import login from './routes/login';
 // import './database';
 
 
@@ -25,11 +26,12 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 app.use(cookieParser());
 app.use(session({
     secret: '12345',
-    name: 'test-gkb',
+    name: 'test',
     cookie: {maxAge: 5*60*1000},
-    saveUnintialized: false,
+    saveUnintialized: true,
     resave: false
 }));
+
 
 // load static files like css, pictures
 app.use(express.static('public'));
@@ -45,6 +47,7 @@ app.use(webpackHotMiddleware(compiler));
 
 // match url, then apply the middleware
 app.use('/api/sendform', sendform);
+app.use('/api/login', login);
 
 
 app.get('/*', (req, res) => {

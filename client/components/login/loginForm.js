@@ -5,6 +5,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import classnames from 'classnames';
+import axios from 'axios';
 // import validateInput from '../../../server/shared/validations/login';
 
 
@@ -36,27 +37,25 @@ class LoginForm extends React.Component {
         return isValid;
     }
 
+    componentWillUpdate(nextProps, nextState) {
+      // perform any preparations for an upcoming update
+      console.log("in componentWillUpdate")
+    }
+
     onSubmit(e) {
         e.preventDefault();
         console.log("login sends: ", this.state);
-        // only when form info is valid, we make the request
-        // if (this.isValid()) {
-        //     this.setState({errors: {} });
-        //     console.log("Login page: ", this.state);
-        //     this.props.login(this.state).then(
-        //         // after server response then...
-        //         // if successful
-        //         (res) => {
-        //             this.context.router.push('/home')
-        //         },
-        //         // if server response any error message, set it into state errors
-        //         (err) => {
-        //             console.log("Login Form: login failed");
-        //             console.log(err.response.data);
-        //             this.setState({ errors: err.response.data});
-        //             console.log("this.state.errors: ", this.state.errors);
-        //         });
-        // }
+
+        axios.post('/api/login', {
+          email: this.state.email,
+          password: this.state.password
+        })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
     }
 
     render() {

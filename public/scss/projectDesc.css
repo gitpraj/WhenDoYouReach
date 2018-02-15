@@ -1,0 +1,71 @@
+.project-desc h1 {
+  color: red;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 60px;
+  margin: 10px 0 20px;
+  margin: 10px 0 24px;
+  text-align: center;
+}
+
+.project-desc h2 {
+  font-size: 30px;
+  letter-spacing: -1px;
+  color: black;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #000;
+  margin: 10px 0 24px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.project-desc p {
+  color: black;
+  font-family: 'Orienta', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  text-align: justify;
+}
+
+.project-desc a {
+  color: #e8d4a7;
+  text-decoration: none;
+  text-align: right;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.project-desc a:hover {
+  color: #da9650;
+  text-decoration: blink;
+}
+
+.project-desc .img-project-desc img {
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.project-desc .project-desc {
+  width: 70%;
+  /* text-align: right; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-desc dd {
+  margin-left: 30%;
+  font-family: 'Orienta', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.project-desc dt {
+  margin-top: 10px;
+  font-family: 'Orienta', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
