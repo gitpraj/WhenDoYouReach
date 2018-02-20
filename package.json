@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./bin/www --watch server --exec babel-node --presets es2015 server/index.js",
+    "start": "node ./bin/www --watch server --exec babel-node --presets es2015 server/index.js",
     "build-css": "node-sass --watch public/scss -o public/css",
     "test": "mocha --compilers js:babel-core/register ./test/test.js"
   },
