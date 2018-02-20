@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack server/index.js",
     "devstart": "nodemon --watch server --exec babel-node --presets es2015 server/index.js",
-    "start": "node server/indes.js",
+    "start": "node server/index.js",
     "build-css": "node-sass --watch public/scss -o public/css",
     "test": "mocha --compilers js:babel-core/register ./test/test.js"
   },
