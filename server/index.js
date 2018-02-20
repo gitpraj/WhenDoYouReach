@@ -72,7 +72,7 @@ var server;
 if (config.dev) {
   server = app.listen(9000, () => console.log('Running on localhost:9000'))
 } else {
-  server = app.listen(80, () => console.log('Running on server which is public.'))
+  server = app.listen(process.env.PORT, () => console.log('Running on server which is public.'))
 }
 
 module.exports = server;
