@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import LoginForm from './LoginForm';
+// import LoginForm from './LoginForm';
 import { connect } from 'react-redux';
 
 class LoginPage extends React.Component {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { Router, Route, browserHistory } from 'react-router';
 import landingPage from './landingPage'
 import loginPage from './login/loginPage'
-import SignupPage from './signup/SignupPage'
+// import SignupPage from './signup/SignupPage'
 import createForm from './forms/createForm'
 import projectPage from './projects/projectPage2'
 import project from './projects/project'
