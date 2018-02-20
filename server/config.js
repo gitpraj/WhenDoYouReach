@@ -1,5 +1,5 @@
 var config = {
-  dev: false;
+  dev: true;
 
 }
 
