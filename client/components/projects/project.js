@@ -34,7 +34,7 @@ class Project extends React.Component {
                 <div className="container project-desc">
                   <h1> Geographical Knowledge Based Search </h1>
                   <div className="img-project-desc">
-                    <img src="/images/Capture.png" />
+                    <img src="./Capture.png" />
                   </div>
                   <h2> GKB </h2>
 
