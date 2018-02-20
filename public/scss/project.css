@@ -44,7 +44,7 @@
 .header-line {
   -webkit-transition: width .5s ease-in-out;
   transition: width .5s ease-in-out;
-  background-color: #63d488;
+  background-color: #bb1313;
   width: 100%;
   height: 3px;
   position: absolute;
@@ -78,7 +78,7 @@
 }
 
 .header .header-title:hover {
-  color: #63d488;
+  color: #bb1313;
 }
 
 .header .header-title-red:hover {
@@ -101,7 +101,7 @@
 }
 
 .color-xs-light-gray {
-  color: #c9c9c9;
+  color: white;
 }
 
 .header-subtitle {
@@ -110,7 +110,7 @@
 }
 
 .header-subtitle:hover {
-  color: #63d488;
+  color: #bb1313;
 }
 
 .header-subtitle-red {
@@ -120,6 +120,10 @@
 
 .header-subtitle-red:hover {
   color: red;
+}
+
+.header-background {
+  background-color: #0095ff;
 }
 
 .navbar-default .navbar-nav > li > a .nav > li > a {
@@ -134,8 +138,8 @@
 
 .nav > li > a:focus, .nav > li > a:hover {
   text-decoration: none;
-  background-color: white;
-  color: green;
+  background-color: #0095ff;
+  color: #bb1313;
 }
 
 .hvrbox,

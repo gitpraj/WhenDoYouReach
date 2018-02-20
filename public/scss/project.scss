@@ -45,7 +45,7 @@
 .header-line {
     -webkit-transition: width .5s ease-in-out;
     transition: width .5s ease-in-out;
-    background-color: #63d488;
+    background-color: #bb1313;
     // background-color: red;
     width: 100%;
     height: 3px;
@@ -83,7 +83,7 @@
 
     .header-title {
       &:hover {
-        color: #63d488;
+        color: #bb1313;
       }
     }
 
@@ -111,7 +111,7 @@
 }
 
 .color-xs-light-gray {
-    color: #c9c9c9;
+    color: white;
 }
 
 .header-subtitle {
@@ -119,7 +119,7 @@
     // line-height: 1.7rem;
     margin-top: .25rem;
     &:hover {
-      color: #63d488
+      color: #bb1313;
     }
 }
 
@@ -130,6 +130,10 @@
     &:hover {
       color: red;
     }
+}
+
+.header-background {
+    background-color: #0095ff;
 }
 
 
@@ -145,8 +149,8 @@
 
 .nav>li>a:focus, .nav>li>a:hover {
      text-decoration: none;
-     background-color: white;
-     color: green;
+     background-color: #0095ff;
+     color: #bb1313;
 }
 
 

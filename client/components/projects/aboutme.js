@@ -23,7 +23,7 @@ class Aboutme extends React.Component {
                   <div className="col-sm-12 col-lg-1"></div>
                   <div className="col-sm-12 col-lg-3">
                       <h3>What I do?</h3>
-                      <p>for those who don't have time to look at the animation below</p>
+                      <p>Strongest Skills</p>
                       <dl>
                         <dt>Front-end</dt>
                         <dd>HTML, CSS3, Bootstrap, Javascript, jQuery, React, Redux</dd>

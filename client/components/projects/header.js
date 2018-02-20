@@ -34,8 +34,8 @@ class HeaderDiv extends React.Component {
         console.log("classnameHeaderSubtitile: " + classnameHeaderSubtitile)
 
         return (
-          <div>
-            <div className={classnameHeaderline}></div>
+          <div className="header-background">
+
 
             <div className="container">
               <div className="row">
@@ -70,6 +70,7 @@ class HeaderDiv extends React.Component {
                 </div>
               </div>
             </div>
+            <div className={classnameHeaderline}></div>
           </div>
         )
     }

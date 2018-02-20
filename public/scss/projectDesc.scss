@@ -1,5 +1,5 @@
 .project-desc {
-  h1 { color:  red;
+  h1 { color:  white;
     // font-family: 'Righteous', cursive;
     font-size: 45px;
     font-weight: normal; line-height: 60px; margin: 10px 0 20px;
@@ -7,10 +7,10 @@
     margin: 10px 0 24px; text-align: center; }
 
 
-  h2 { font-size: 30px; letter-spacing: -1px; color: black; text-transform: uppercase; text-shadow: 1px 1px 0 #000; margin: 10px 0 24px; text-align: center; line-height: 50px; }
+  h2 { font-size: 30px; letter-spacing: -1px; color: white; text-transform: uppercase; text-shadow: 1px 1px 0 #000; margin: 10px 0 24px; text-align: center; line-height: 50px; }
 
 
-  p { color: black; font-family: 'Orienta', sans-serif; font-size: 16px; line-height: 24px; margin: 0 0 24px; text-align: justify;}
+  p { color: white; font-family: 'Orienta', sans-serif; font-size: 16px; line-height: 24px; margin: 0 0 24px; text-align: justify;}
 
 
   a { color: #e8d4a7; text-decoration: none; text-align: right; padding: 15px; font-size: 20px; }
@@ -46,6 +46,87 @@
   }
 }
 
-// .project-desc-page {
-//   background-color: #8f1313;
-// }
+.project-desc-page {
+  background-color: #ab0a0a;
+}
+
+.tech-icon-container {
+    margin: 1em 0 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tech-icon-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: black;
+    color: white;
+    border-radius: 2px;
+    margin: .2em .2em .2em 0;
+    padding: 5px 10px;
+    font-family: Raleway,Open Sans,sans-serif;
+    font-weight: 600;
+}
+
+.tech-icon {
+    margin: auto auto auto 5px;
+    height: 1.5em;
+}
+
+.project-links {
+    // margin: 2vh 0;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    // display: inline-block;
+// text-align: left;
+    // padding-top: 5px;
+    list-style-type: none;
+    width: 16%;
+    margin-left: auto;
+    margin-right: auto;
+    a {
+      color: white;
+      text-decoration: underline;
+      &:hover {
+        color: blue;
+        text-decoration: underline;
+
+      }
+      i {
+        color: white;
+        &:hover {
+          color: blue;
+        }
+      }
+      padding: 0px;
+      text-align: center;
+    }
+
+    i {
+      margin: 0 5px;
+    }
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
