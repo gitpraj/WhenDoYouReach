@@ -9,7 +9,7 @@ class Project extends React.Component {
     render() {
         return (
             <div className="project-desc-page">
-                <Header color="red" />
+
                 <div className="container project-desc">
                   <h1> Geographical Knowledge Based Search </h1>
                   <div className="img-project-desc">
@@ -48,7 +48,7 @@ class Project extends React.Component {
                   </div>
                 </div>
 
-                <Footer />
+                
             </div>
         );
     }

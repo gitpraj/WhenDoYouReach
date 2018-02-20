@@ -46,9 +46,8 @@
   transition: width .5s ease-in-out;
   background-color: #63d488;
   width: 100%;
-  height: 2px;
+  height: 3px;
   position: absolute;
-  top: 0;
   left: 0;
 }
 
@@ -57,9 +56,8 @@
   transition: width .5s ease-in-out;
   background-color: red;
   width: 100%;
-  height: 2px;
+  height: 3px;
   position: absolute;
-  top: 0;
   left: 0;
 }
 
@@ -122,6 +120,22 @@
 
 .header-subtitle-red:hover {
   color: red;
+}
+
+.navbar-default .navbar-nav > li > a .nav > li > a {
+  color: #333;
+}
+
+.nav li a {
+  padding: 12px 24px;
+  color: black;
+  font-size: 20px;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: green;
 }
 
 .hvrbox,
@@ -303,4 +317,9 @@
 
 .hvrbox.active .hvrbox-text_mobile {
   display: block;
+}
+
+.aboutme-pic img {
+  height: 100%;
+  width: 100%;
 }

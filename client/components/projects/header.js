@@ -4,8 +4,11 @@
 // Copyright Prajith Maniyan ©2017
 import React from 'react'
 import { connect } from 'react-redux';
+import { Route, RouteHandler, Link } from 'react-router';
+import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
-class Header extends React.Component {
+class HeaderDiv extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -39,13 +42,24 @@ class Header extends React.Component {
                 <div className="col-xs-12">
                   <header className="header">
                     <div className="header-logo" href="/">
-                      <a className={classnameaTag} href="http://www.prajithmaniyan.com/">
+                      <Link to="/">
+                      <a className={classnameaTag}>
                         Prajith Maniyan
                       </a>
+                      </Link>
                       <p className="color-xs-light-gray">
                         Software Developer
                       </p>
                     </div>
+
+                    <ul className="nav navbar-nav">
+                      <li role="presentation" >
+                        <a action="push" href="/aboutme">aboutme</a>
+                      </li>
+                      <li role="presentation" >
+                        <a action="push" href="/projects">projects</a>
+                      </li>
+                    </ul>
 
                     <div className="header-right">
                       <a className={classnameHeaderSubtitile} href="mailto:prajithmanian@gmail.com">
@@ -61,8 +75,8 @@ class Header extends React.Component {
     }
 }
 
-Header.PropTypes = {
+HeaderDiv.PropTypes = {
     color: React.PropTypes.object.isRequired
 }
 
-export default Header;
+export default HeaderDiv;

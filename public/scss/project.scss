@@ -48,9 +48,9 @@
     background-color: #63d488;
     // background-color: red;
     width: 100%;
-    height: 2px;
+    height: 3px;
     position: absolute;
-    top: 0;
+    // top: 0;
     left: 0;
 }
 
@@ -60,9 +60,9 @@
     // background-color: #63d488;
     background-color: red;
     width: 100%;
-    height: 2px;
+    height: 3px;
     position: absolute;
-    top: 0;
+    // top: 0;
     left: 0;
 }
 
@@ -130,6 +130,23 @@
     &:hover {
       color: red;
     }
+}
+
+
+.navbar-default .navbar-nav>li>a .nav>li>a{
+    color: #333;
+}
+
+.nav li a {
+    padding: 12px 24px;
+    color: black;
+    font-size: 20px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+     text-decoration: none;
+     background-color: white;
+     color: green;
 }
 
 
@@ -340,4 +357,15 @@
 }
 .hvrbox.active .hvrbox-text_mobile {
 	display: block;
+}
+
+.aboutme-pic {
+    // background-image: url("/images/IMG_4765-min.jpg");
+    // position: relative;
+    // height: 100%;
+    // width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
 }

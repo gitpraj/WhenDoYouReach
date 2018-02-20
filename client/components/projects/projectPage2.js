@@ -74,7 +74,7 @@ class ProjectPage extends React.Component {
       const {imgSrcleft} = this.state
         return (
           <div>
-            <Header />
+
 
             <div className="container">
               <div className="row">
@@ -145,7 +145,7 @@ class ProjectPage extends React.Component {
 
 
 
-            <Footer />
+            
           </div>
 
         )

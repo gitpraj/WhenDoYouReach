@@ -5,7 +5,7 @@
 import React from 'react'
 import { connect } from 'react-redux';
 
-class Footer extends React.Component {
+class FooterDiv extends React.Component {
     render() {
         return (
           <footer className="footer">
@@ -47,4 +47,4 @@ class Footer extends React.Component {
     }
 }
 
-export default Footer;
+export default FooterDiv;
