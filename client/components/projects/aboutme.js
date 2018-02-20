@@ -7,7 +7,7 @@ class Aboutme extends React.Component {
         return (
             <div>
               <div className="aboutme-pic">
-                <img src="./IMG_4765-min.jpg"></img>
+                <img src="/images/IMG_4765-min.jpg"></img>
               </div>
               <section className="about" >
                 <div className="row">

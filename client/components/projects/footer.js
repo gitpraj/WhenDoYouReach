@@ -37,7 +37,7 @@ class FooterDiv extends React.Component {
               <div className="credits">
                 <p className="footer-name">Prajith Maniyan </p>
                 <p><a className="email" href="mailto:prajithmanian@gmail.com">prajithmanian@gmail.com</a></p>
-                <img className="slice-footer" src="./footer-logo.png"/>
+                <img className="slice-footer" src="/images/footer-logo.png"/>
               </div>
               <div className="copyright-footer">
                 <p>Copyright Prajith Maniyan ©2017 -- Made with <span><a className="" href="https://reactjs.org/" target="_blank">React</a></span> </p>
