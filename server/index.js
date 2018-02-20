@@ -1,18 +1,32 @@
-import express from 'express';
-import path from 'path';
-import bodyParser from 'body-parser';
+// import express from 'express';
+// import path from 'path';
+// import bodyParser from 'body-parser';
+//
+// import webpack from 'webpack';
+// import webpackMiddleware from 'webpack-dev-middleware';
+// import webpackHotMiddleware from 'webpack-hot-middleware';
+// import webpackConfig from '../webpack.config';
+// import session from 'express-session';
+// import cookieParser from 'cookie-parser';
+// import config from './config'
+// import sendform from './routes/sendform';
+// import login from './routes/login';
 
-import webpack from 'webpack';
-import webpackMiddleware from 'webpack-dev-middleware';
-import webpackHotMiddleware from 'webpack-hot-middleware';
-import webpackConfig from '../webpack.config';
-import session from 'express-session';
-import cookieParser from 'cookie-parser';
-import config from './config'
-import sendform from './routes/sendform';
-import login from './routes/login';
 // import './database';
 
+const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
+
+const webpack = require('webpack');
+const webpackMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
+const webpackConfig = require('../webpack.config');
+const session = require('express-session');
+const cookieParser = require('cookie-parser');
+const config = require('./config')
+// const sendform = require('./routes/sendform');
+// const login = require('./routes/login');
 
 let app = express();
 
@@ -46,8 +60,8 @@ app.use(webpackHotMiddleware(compiler));
 // parse data from request body ==> use bodyParser middleware
 
 // match url, then apply the middleware
-app.use('/api/sendform', sendform);
-app.use('/api/login', login);
+// app.use('/api/sendform', sendform);
+// app.use('/api/login', login);
 
 
 app.get('/*', (req, res) => {
