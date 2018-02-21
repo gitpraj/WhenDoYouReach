@@ -1,5 +1,5 @@
 var config = {
-  dev: true
+  dev: false
 };
 
 module.exports = config;
