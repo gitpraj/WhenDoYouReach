@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.landing-page {
+  background-color: #19871c;
+  display: block;
+  height: 100vh;
+}
+
+.landing-search-bar {
+  position: relative;
+  /* left: 25%; */
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 15px 50px;
+}
+
+.landing-search-bar input {
+  border-radius: 15px 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.button-search {
+  width: 20px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.search-bar-box {
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tech-icon {
+  margin: auto auto auto 5px;
+  height: 1.5em;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  font-size: 20px;
+  color: black;
+}
+
+.footer .footer-container {
+  position: relative;
+  display: block;
+  width: 140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+  align-self: center;
+  background: #da3434;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  /*
+      Above is shorthand for:
+      border-top-left-radius: 255px 15px;
+      border-top-right-radius: 15px 225px;
+      border-bottom-right-radius: 225px 15px;
+      border-bottom-left-radius:15px 255px;
+      */
+}
+
+button:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+button.lined.thick {
+  border: solid 7px #41403E;
+}
+
+button.dotted.thick {
+  border: dotted 5px #41403E;
+}
+
+button.dashed.thick {
+  border: dashed 5px #41403E;
+}
+
+button.lined.thin {
+  border: solid 2px #41403E;
+}
+
+button.dotted.thin {
+  border: dotted 2px #41403E;
+}
+
+button.dashed.thin {
+  border: dashed 2px #41403E;
+}
