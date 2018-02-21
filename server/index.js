@@ -70,7 +70,7 @@ app.get('/*', (req, res) => {
 
 var server;
 if (config.dev) {
-  server = app.listen(3000, () => console.log('Running on localhost:9000'))
+  server = app.listen(3000, () => console.log('Running on localhost:3000'))
 } else {
   server = app.listen(process.env.PORT, () => console.log('Running on server which is public.'))
 }

@@ -13,7 +13,7 @@ import { Router, IndexRoute, Route, browserHistory } from 'react-router';
 let routes = (
   <Route path="/" component={Layout}>
     <IndexRoute component={HomePage}/>
-    
+
   </Route>
 );
 
