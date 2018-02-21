@@ -8,34 +8,15 @@ import rootReduce from './reducers/rootReducer';
 import App from './components/app.js';
 import projectPage from './components/projects/projectPage2'
 import project from './components/projects/project'
+import projectEU from './components/projects/projectEU'
+import projectACA from './components/projects/projectACA'
+import projectSM from './components/projects/projectSM'
+import projectCR from './components/projects/projectCR'
 import HomePage from './components/projects/homepage'
 import Layout from './components/projects/layout'
 import Aboutme from './components/projects/aboutme'
 import ReactDOM from 'react-dom';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router';
-
-// const store = createStore(
-//     rootReduce,
-//     compose(
-//         applyMiddleware(thunk),
-//         window.devToolsExtension ? window.devToolsExtension() : f => f
-//     )
-// )
-
-// <Provider store={store}>
-
-// render(
-//     <Provider>
-//         <landingPage />
-//     </Provider>
-//     , document.getElementById('app')
-// );
-// <Route path="projects(/:name)" component={project}/>
-
-// render(
-//         <App />
-//     , document.getElementById('app')
-// );
 
 let routes = (
   <Route path="/" component={Layout}>
@@ -44,6 +25,10 @@ let routes = (
     <Route path="projects">
         <IndexRoute component={projectPage}/>
         <Route path="gkb" component={project}/>
+        <Route path="eu" component={projectEU}/>
+        <Route path="aca" component={projectACA}/>
+        <Route path="sm" component={projectSM}/>
+        <Route path="cr" component={projectCR}/>
     </Route>
 
   </Route>

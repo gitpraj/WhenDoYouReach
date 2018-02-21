@@ -1,6 +1,5 @@
 var config = {
-  dev: false
-
-}
+  dev: true
+};
 
 module.exports = config;

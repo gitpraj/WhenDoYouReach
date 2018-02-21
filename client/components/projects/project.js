@@ -5,27 +5,6 @@ import { connect } from 'react-redux';
 import Footer from './footer';
 import Header from './header';
 
-
-// <div className="row">
-//   <div className="col-lg-4"></div>
-//   <div className="col-lg-6">
-//     <dl>
-//       <dt>Front-end</dt>
-//       <dd>ReactJS with Redux state container, HTML5/CSS3/Bootstrap</dd>
-//       <dt>Back-end</dt>
-//       <dd>NodeJS with express framework</dd>
-//       <dt>Database</dt>
-//       <dd>MongoDB</dd>
-//       <dt>IaaS/Cloud Computing Services</dt>
-//       <dd>Nectar</dd>
-//       <dt>External API's</dt>
-//       <dd>Google Maps API, Google Place API, Firebase, Nodemailer</dd>
-//     </dl>
-//   </div>
-//   <div className="col-lg-2"></div>
-// </div>
-
-
 class Project extends React.Component {
     render() {
         return (
@@ -36,7 +15,7 @@ class Project extends React.Component {
                   <div className="img-project-desc">
                     <img src="/images/Capture.png"/>
                   </div>
-                  <h2> GKB </h2>
+                  <h2> University of Melbourne </h2>
 
                   <div className="project-desc">
                     <p className="">

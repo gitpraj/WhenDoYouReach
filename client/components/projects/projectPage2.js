@@ -14,60 +14,37 @@ class ProjectPage extends React.Component {
           imgSrc: "https://i0.wp.com/www.manilalivewire.com/wp-content/uploads/1365473620_0729.760x498.jpeg?resize=640%2C420"
       }
 
-      this.clickleft = this.clickleft.bind(this);
       this.clickright = this.clickright.bind(this);
-      this.mouseOver = this.mouseOver.bind(this);
-      this.mouseOverleft = this.mouseOverleft.bind(this);
-      this.mouseOut = this.mouseOut.bind(this);
-      this.mouseOutleft = this.mouseOutleft.bind(this);
-  }
-
-  clickleft(e) {
-      // this.setState({ [e.target.name]: e.target.value })
-      this.context.router.push('/seven11')
+      this.clickrightEU = this.clickrightEU.bind(this);
+      this.clickrightACA = this.clickrightACA.bind(this);
+      this.clickrightSM = this.clickrightSM.bind(this);
+      this.clickrightCR = this.clickrightCR.bind(this);
+      this.clickrightWH = this.clickrightWH.bind(this);
   }
 
   clickright(e) {
-      // this.setState({ [e.target.name]: e.target.value })
-      console.log("hello clickright")
       this.context.router.push('/projects/gkb')
   }
 
-  mouseOver(e) {
-    // console.log("onMouseOVer reached")
-    this.setState({
-      imgSrc: "https://i.pinimg.com/originals/40/80/bf/4080bf1fa096fa2b71cb5ba33a6497a3.jpg"
-    })
+  clickrightEU(e) {
+      this.context.router.push('/projects/eu')
   }
 
-  mouseOut() {
-    // console.log("mouseout reached")
-    this.setState({
-      imgSrc: "https://i0.wp.com/www.manilalivewire.com/wp-content/uploads/1365473620_0729.760x498.jpeg?resize=640%2C420"
-    })
+  clickrightACA(e) {
+      this.context.router.push('/projects/aca')
   }
 
-  mouseOverleft(e) {
-    this.setState({
-      imgSrcleft: "http://www.mahkotamedical.com/wp-content/uploads/2016/07/7eleven-1.png"
-    })
+  clickrightSM(e) {
+      this.context.router.push('/projects/sm')
   }
 
-  mouseOutleft() {
-    // console.log("mouseout reached")
-    this.setState({
-      imgSrcleft: "https://i0.wp.com/www.manilalivewire.com/wp-content/uploads/1365473620_0729.760x498.jpeg?resize=640%2C420"
-    })
+  clickrightCR(e) {
+      this.context.router.push('/projects/cr')
   }
-  // <div className="project-header">
-  //     <h1>
-  //
-  //         <br></br>
-  //         <span data-shadow-text="Text-Shadow">PROJECTS</span>
-  //         <br></br>
-  //
-  //     </h1>
-  // </div>
+
+  clickrightWH(e) {
+      this.context.router.push('/projects/wh')
+  }
 
     render() {
       const {imgSrc} = this.state
@@ -99,8 +76,8 @@ class ProjectPage extends React.Component {
                     <div className="landing-page-block landing-block">
                       <div className="hvrbox">
                         <img src="http://biginja.com/wp-content/uploads/2016/10/MLseries-1.png"
-                            onClick={this.clickright} className="hvrbox-layer_bottom" />
-                        <div className="hvrbox-layer_top" onClick={this.clickright}>
+                            onClick={this.clickrightACA} className="hvrbox-layer_bottom" />
+                        <div className="hvrbox-layer_top" onClick={this.clickrightACA}>
                           <div className="hvrbox-text">Web Development, Twitter Harvesting, Analytics </div>
                           <div className="hvrbox-text-line2"> - </div>
                           <div className="hvrbox-text-bottom">with Html, jQuery, Bootstrap, node.js, tweepy, 1D CNN, Genderizer </div>
@@ -114,8 +91,8 @@ class ProjectPage extends React.Component {
                     <div className="landing-page-block landing-block">
                       <div className="hvrbox">
                         <img src="https://www.eppenbergerdigital.com/wp-content/uploads/2016/12/Eppenberger_Digital_CRM-1.jpg"
-                            onClick={this.clickright} className="hvrbox-layer_bottom" />
-                        <div className="hvrbox-layer_top_red" onClick={this.clickright}>
+                            onClick={this.clickrightEU} className="hvrbox-layer_bottom" />
+                        <div className="hvrbox-layer_top_red" onClick={this.clickrightEU}>
                           <div className="hvrbox-text">Full Stack Web Development. </div>
                           <div className="hvrbox-text-line"> - </div>
                           <div className="hvrbox-text-bottom">with HTML/jquery/javascript/Bootsrap and node.js </div>
@@ -128,9 +105,39 @@ class ProjectPage extends React.Component {
                   <div className="float_on_the_right">
                     <div className="landing-page-block landing-block">
                       <div className="hvrbox">
+                        <img src="http://blogs.3ds.com/3dsmobility/wp-content/uploads/sites/13/2016/10/SmartCitiesMobility.jpg"
+                            onClick={this.clickrightWH} className="hvrbox-layer_bottom" />
+                        <div className="hvrbox-layer_top_green" onClick={this.clickrightWH}>
+                          <div className="hvrbox-text">Full Stack Web Development </div>
+                          <div className="hvrbox-text-line"> - </div>
+                          <div className="hvrbox-text-bottom">with React.js and node.js</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xs-12 col-sm-6">
+                  <div className="float_on_the_right">
+                    <div className="landing-page-block landing-block">
+                      <div className="hvrbox">
+                        <img src="https://martechtoday.com/wp-content/uploads/2017/02/network-machine-learning-ss-1920.jpg"
+                            onClick={this.clickrightCR} className="hvrbox-layer_bottom" />
+                        <div className="hvrbox-layer_top_darkblue" onClick={this.clickrightCR}>
+                          <div className="hvrbox-text">Machine Learning </div>
+                          <div className="hvrbox-text-line"> - </div>
+                          <div className="hvrbox-text-bottom">with python/scikit </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xs-12 col-sm-6">
+                  <div className="float_on_the_right">
+                    <div className="landing-page-block landing-block">
+                      <div className="hvrbox">
                         <img src="https://media.wired.com/photos/59267748f3e2356fd8009556/master/w_840,c_limit/SignalTA.jpg"
-                            onClick={this.clickright} className="hvrbox-layer_bottom" />
-                        <div className="hvrbox-layer_top_blue" onClick={this.clickright}>
+                            onClick={this.clickrightSM} className="hvrbox-layer_bottom" />
+                        <div className="hvrbox-layer_top_blue" onClick={this.clickrightSM}>
                           <div className="hvrbox-text">Java Application Development. </div>
                           <div className="hvrbox-text-line"> - </div>
                           <div className="hvrbox-text-bottom">with Core Java programming </div>
@@ -145,7 +152,7 @@ class ProjectPage extends React.Component {
 
 
 
-            
+
           </div>
 
         )

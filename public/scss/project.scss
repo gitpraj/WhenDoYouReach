@@ -278,6 +278,46 @@
 	transition: all 0.4s ease-in-out 0s;
 }
 
+.hvrbox-layer_top_darkblue {
+  opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	// background: rgba(0, 0, 0, 0.6);
+  background: blue;
+	color: #fff;
+  // color: blue;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.hvrbox-layer_top_green {
+  opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	// background: rgba(0, 0, 0, 0.6);
+  background: green;
+	color: #fff;
+  // color: blue;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
 .hvrbox:hover .hvrbox-layer_top,
 .hvrbox.active .hvrbox-layer_top {
 	opacity: 1;
@@ -295,6 +335,16 @@
 
 .hvrbox:hover .hvrbox-layer_top_red,
 .hvrbox.active .hvrbox-layer_top_red {
+	opacity: 1;
+}
+
+.hvrbox:hover .hvrbox-layer_top_darkblue,
+.hvrbox.active .hvrbox-layer_top_darkblue {
+	opacity: 1;
+}
+
+.hvrbox:hover .hvrbox-layer_top_green,
+.hvrbox.active .hvrbox-layer_top_green {
 	opacity: 1;
 }
 
