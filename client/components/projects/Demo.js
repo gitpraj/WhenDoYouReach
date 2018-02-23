@@ -86,13 +86,14 @@ class Demo extends React.Component {
             <div className="landing-page">
                 <img className="img-icon" src="/images/cycle2.jpg"></img>
                 <div className="landing-search-bar">
-                    <PlacesAutocomplete inputProps={inputProps} />
+                      {this.state.errors && <div className="error-msg"><p>You gotta be kidding. Too far mate!!</p></div>}
+                      <PlacesAutocomplete inputProps={inputProps} />
 
                       <button className="lined thick" onClick={this.onButtonClicked}>How much time?</button>
 
 
                 </div>
-                {this.state.errors && <div className="error-msg"><p>You gotta be kidding me. Please try something closer.</p></div>}
+
                 <div className="footer">
                   <div className="footer-container">
                     <span>Made with </span>
