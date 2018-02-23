@@ -44,7 +44,7 @@ class DistancePage extends React.Component {
                     </div>
                   </div>
                   <div className="quarter-div-car col-lg-6">
-                    <img className="img-icon-distance" src="/images/cycle2.jpg"/>
+                    <img className="img-icon-distance" src="/images/car.jpg"/>
                     <div className="dist-text">
                       <p>
                           <span>{this.props.location.state.car.distance}</span> kms in <span>{this.props.location.state.car.duration}</span>
@@ -54,7 +54,7 @@ class DistancePage extends React.Component {
                 </div>
                 <div className="row">
                   <div className="quarter-div-train col-lg-6">
-                    <img className="img-icon-distance" src="/images/cycle2.jpg"/>
+                    <img className="img-icon-distance" src="/images/train.jpg"/>
                     <div className="dist-text">
                       <p>
                           <span>{this.props.location.state.train.distance}</span> kms in <span>{this.props.location.state.train.duration}</span>
@@ -62,7 +62,7 @@ class DistancePage extends React.Component {
                     </div>
                   </div>
                   <div className="quarter-div-walk col-lg-6">
-                    <img className="img-icon-distance" src="/images/cycle2.jpg"/>
+                    <img className="img-icon-distance" src="/images/walk.jpg"/>
                     <div className="dist-text">
                       <p>
                           <span>{this.props.location.state.walk.distance}</span> kms in <span>{this.props.location.state.walk.duration}</span>
