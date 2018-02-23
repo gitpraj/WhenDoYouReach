@@ -19,7 +19,7 @@ button:focus {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  top: 20%;
+  top: 25%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -45,6 +45,13 @@ button:focus {
   outline: none;
   box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  position: relative;
+  margin-top: 2%;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: -1;
   /*
         Above is shorthand for:
         border-top-left-radius: 255px 15px;
@@ -89,7 +96,6 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   height: 40%;
-  width: 20%;
   border-radius: 50%;
 }
 
@@ -133,7 +139,11 @@ button:focus {
   color: #e5e82a;
 }
 
-.error-msg {
+.error-msg p {
   position: relative;
   display: block;
+  top: 20%;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
 }

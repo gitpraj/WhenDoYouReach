@@ -77,20 +77,22 @@ class Demo extends React.Component {
       placeholder: 'Where do you wanna go?',
     }
 
+    // <span className="input-group-btn">
+
     return (
         <div>
 
           {disableFlag ? <div>enalbe please</div> :
             <div className="landing-page">
                 <img className="img-icon" src="/images/cycle2.jpg"></img>
-                <div className="landing-search-bar input-group">
+                <div className="landing-search-bar">
                     <PlacesAutocomplete inputProps={inputProps} />
-                    <span className="input-group-btn">
+
                       <button className="lined thick" onClick={this.onButtonClicked}>How much time?</button>
-                    </span>
+
 
                 </div>
-                {this.state.errors && <div className="error-msg">You gotta be kidding me</div>}
+                {this.state.errors && <div className="error-msg"><p>You gotta be kidding me. Please try something closer.</p></div>}
                 <div className="footer">
                   <div className="footer-container">
                     <span>Made with </span>
