@@ -82,7 +82,7 @@ class Demo extends React.Component {
     return (
         <div>
 
-          {disableFlag ? <div>enalbe please</div> :
+          {disableFlag ? <div><h2>Sorry, location has to be enabled.</h2></div> :
             <div className="landing-page">
                 <img className="img-icon" src="/images/cycle2.jpg"></img>
                 <div className="landing-search-bar">
