@@ -6,14 +6,17 @@ import { createStore, applyMiddleware, compose} from 'redux';
 import jwt from 'jsonwebtoken';
 import rootReduce from './reducers/rootReducer';
 import HomePage from './components/projects/homepage'
+import DistancePage from './components/projects/distancePage'
+import Demo from './components/projects/Demo'
 import Layout from './components/projects/layout'
 import ReactDOM from 'react-dom';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router';
 
 let routes = (
   <Route path="/" component={Layout}>
-    <IndexRoute component={HomePage}/>
-
+    <IndexRoute component={Demo}/>
+    <Route path="dist" component={DistancePage}/>
+    <Route path="demo" component={Demo}/>
   </Route>
 );
 

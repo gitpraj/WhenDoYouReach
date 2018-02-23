@@ -10,7 +10,7 @@ class SimpleForm extends React.Component {
     this.onChange = this.onChange.bind(this);
   }
 
-  // handleFormSubmit(event) {
+  // handleFormSubmit(event) {,
   //   event.preventDefault()
   //
   //   geocodeByAddress(this.state.address)
@@ -30,6 +30,7 @@ class SimpleForm extends React.Component {
     const inputProps = {
       value: this.state.address,
       onChange: this.onChange,
+      placeholder: 'Where do you wanna go?',
     }
 
     return (

@@ -1,9 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
 input:focus,
 select:focus,
 textarea:focus,
-button:focus {
+button,
+button:focus{
     outline: none;
 }
+
 
 .landing-page {
   background-color: #19871c;
@@ -18,7 +22,7 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   // display: block;
-  top: 50%;
+  top: 20%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -31,7 +35,61 @@ button:focus {
     font-size:2rem;
   }
 
+  button{
+        align-self:center;
+        // background:transparent;
+        background: #da3434;
+        padding:1rem 1rem;
+        margin:0 1rem;
+        transition:all .5s ease;
+        color:#41403E;
+        font-size:2rem;
+        letter-spacing:1px;
+        outline:none;
+        box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        /*
+        Above is shorthand for:
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        border-bottom-right-radius: 225px 15px;
+        border-bottom-left-radius:15px 255px;
+        */
+         &:hover{
+           box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+        }
+        &.lined.thick{
+           border:solid 7px #41403E;
+        }
+        &.dotted.thick{
+           border:dotted 5px #41403E;
+        }
+        &.dashed.thick{
+          border:dashed 5px #41403E;
+        }
+         &.lined.thin{
+           border:solid 2px #41403E;
+        }
+        &.dotted.thin{
+           border:dotted 2px #41403E;
+        }
+        &.dashed.thin{
+          border:dashed 2px #41403E;
+        }
+      }
 
+
+}
+
+.img-icon {
+    top: 10%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40%;
+    width: 20%;
+    border-radius: 50%;
 }
 
 .button-search {
@@ -45,13 +103,13 @@ button:focus {
 }
 
 .tech-icon {
-    margin: auto auto auto 5px;
+    margin: auto 5px auto 5px;
     height: 1.5em;
 }
 
 .footer {
   position: absolute;
-  bottom:10%;
+  bottom:3%;
   width: 100%;
   font-size: 20px;
   color: black;
@@ -59,53 +117,21 @@ button:focus {
   .footer-container {
     position: relative;
     display: block;
-    width: 140px;
+    width: 230px;
     margin-right: auto;
     margin-left: auto;
+
+    a {
+      color: black;
+      text-decoration: underline;
+      &:hover {
+        color: #e5e82a;
+      }
+    }
   }
 }
 
-@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
-
-button{
-      align-self:center;
-      // background:transparent;
-      background: #da3434;
-      padding:1rem 1rem;
-      margin:0 1rem;
-      transition:all .5s ease;
-      color:#41403E;
-      font-size:2rem;
-      letter-spacing:1px;
-      outline:none;
-      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
-      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-      /*
-      Above is shorthand for:
-      border-top-left-radius: 255px 15px;
-      border-top-right-radius: 15px 225px;
-      border-bottom-right-radius: 225px 15px;
-      border-bottom-left-radius:15px 255px;
-      */
-       &:hover{
-         box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
-      }
-      &.lined.thick{
-         border:solid 7px #41403E;
-      }
-      &.dotted.thick{
-         border:dotted 5px #41403E;
-      }
-      &.dashed.thick{
-        border:dashed 5px #41403E;
-      }
-       &.lined.thin{
-         border:solid 2px #41403E;
-      }
-      &.dotted.thin{
-         border:dotted 2px #41403E;
-      }
-      &.dashed.thin{
-        border:dashed 2px #41403E;
-      }
-    }
+.error-msg {
+  position: relative;
+  display: block;
+}

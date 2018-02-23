@@ -2,6 +2,7 @@
 input:focus,
 select:focus,
 textarea:focus,
+button,
 button:focus {
   outline: none;
 }
@@ -18,7 +19,7 @@ button:focus {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  top: 50%;
+  top: 20%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -32,38 +33,7 @@ button:focus {
   font-size: 2rem;
 }
 
-.button-search {
-  width: 20px;
-  height: 30px;
-  margin-left: 10px;
-}
-
-.search-bar-box {
-  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.5);
-}
-
-.tech-icon {
-  margin: auto auto auto 5px;
-  height: 1.5em;
-}
-
-.footer {
-  position: absolute;
-  bottom: 10%;
-  width: 100%;
-  font-size: 20px;
-  color: black;
-}
-
-.footer .footer-container {
-  position: relative;
-  display: block;
-  width: 140px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-button {
+.landing-search-bar button {
   align-self: center;
   background: #da3434;
   padding: 1rem 1rem;
@@ -76,38 +46,94 @@ button {
   box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   /*
-      Above is shorthand for:
-      border-top-left-radius: 255px 15px;
-      border-top-right-radius: 15px 225px;
-      border-bottom-right-radius: 225px 15px;
-      border-bottom-left-radius:15px 255px;
-      */
+        Above is shorthand for:
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        border-bottom-right-radius: 225px 15px;
+        border-bottom-left-radius:15px 255px;
+        */
 }
 
-button:hover {
+.landing-search-bar button:hover {
   box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
 }
 
-button.lined.thick {
+.landing-search-bar button.lined.thick {
   border: solid 7px #41403E;
 }
 
-button.dotted.thick {
+.landing-search-bar button.dotted.thick {
   border: dotted 5px #41403E;
 }
 
-button.dashed.thick {
+.landing-search-bar button.dashed.thick {
   border: dashed 5px #41403E;
 }
 
-button.lined.thin {
+.landing-search-bar button.lined.thin {
   border: solid 2px #41403E;
 }
 
-button.dotted.thin {
+.landing-search-bar button.dotted.thin {
   border: dotted 2px #41403E;
 }
 
-button.dashed.thin {
+.landing-search-bar button.dashed.thin {
   border: dashed 2px #41403E;
+}
+
+.img-icon {
+  top: 10%;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40%;
+  width: 20%;
+  border-radius: 50%;
+}
+
+.button-search {
+  width: 20px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.search-bar-box {
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tech-icon {
+  margin: auto 5px auto 5px;
+  height: 1.5em;
+}
+
+.footer {
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  font-size: 20px;
+  color: black;
+}
+
+.footer .footer-container {
+  position: relative;
+  display: block;
+  width: 230px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer .footer-container a {
+  color: black;
+  text-decoration: underline;
+}
+
+.footer .footer-container a:hover {
+  color: #e5e82a;
+}
+
+.error-msg {
+  position: relative;
+  display: block;
 }

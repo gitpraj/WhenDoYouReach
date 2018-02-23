@@ -1,0 +1,103 @@
+body, html{
+  overflow-x: hidden;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.distance-page-wrapper {
+  position: relative;
+  // width: 500px;
+  // height: 100vh;
+  // background: green;
+
+  .quarter-div-cycle {
+    // position: absolute;
+    // width: 50%;
+    height: 50vh;
+    background: yellow;
+    // border-radius: 0px 0px 70px 0px;
+    // z-index: -1;
+  }
+  .quarter-div-car {
+    // position: absolute;
+    // width: 50%;
+    height: 50vh;
+    background: red;
+    // border-radius: 0px 0px 0px 70px;
+    // z-index: -1;
+  }
+  .quarter-div-train {
+    // position: absolute;
+    // width: 50%;
+    height: 50vh;
+    background: blue;
+    // border-radius: 0px 70px 0px 0px;
+    // z-index: -1;
+  }
+  .quarter-div-walk {
+    // position: absolute;
+    // width: 50%;
+    height: 50vh;
+    background: green;
+    // border-radius: 70px 0px 0px 0px;
+    // z-index: -1;
+  }
+}
+
+.img-icon-distance {
+    top: 10%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.dist-text {
+    top: 20%;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    position: relative;
+
+    span {
+      text-decoration: underline;
+    }
+}
+
+.dist-page-header {
+  background-color: black;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .btn-circle.btn-lg {
+    // position: absolute;
+    // top: 50%;
+    z-index: -1;
+    background: white;
+    // font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+    &:hover {
+      background: red;
+      color: black;
+    }
+
+    i {
+      text-align: center;
+    }
+
+  }
+}
+
+.dist-header-a {
+  &:hover{
+    text-decoration: none;
+  }
+}

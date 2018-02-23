@@ -25,7 +25,7 @@ const webpackConfig = require('../webpack.config');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const config = require('./config')
-// const sendform = require('./routes/sendform');
+const calcDist = require('./routes/calcDist');
 // const login = require('./routes/login');
 
 let app = express();
@@ -59,8 +59,8 @@ app.use(webpackMiddleware(compiler, {
 app.use(webpackHotMiddleware(compiler));
 // parse data from request body ==> use bodyParser middleware
 
-// match url, then apply the middleware
-// app.use('/api/sendform', sendform);
+//match url, then apply the middleware
+app.use('/api/calcDist', calcDist);
 // app.use('/api/login', login);
 
 

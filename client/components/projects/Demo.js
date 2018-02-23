@@ -1,18 +1,18 @@
-// Copyright Prajith Maniyan ©2017
-import React from 'react'
+import React from 'react';
+import {geolocated} from 'react-geolocated';
 import { connect } from 'react-redux';
 import { Route, RouteHandler, Link } from 'react-router';
 import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete'
 import { browserHistory } from 'react-router'
 import axios from 'axios';
-// import GoogleAutoSuggest from './GoogleAutoSuggest3.js'
 
-class Homepage extends React.Component {
+class Demo extends React.Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      address: ""
+      destAddr: "",
+      errors: false
     }
     this.onChange = this.onChange.bind(this);
     this.onButtonClicked = this.onButtonClicked.bind(this);
@@ -21,7 +21,7 @@ class Homepage extends React.Component {
   onChange(address2) {
       // console.log(address2)
       this.setState({
-        address: address2
+        destAddr: address2
       });
   }
 
@@ -30,42 +30,67 @@ class Homepage extends React.Component {
 
       console.log("login sends: ", this.state);
 
+      var DemoObj = this;
       axios.post('/api/calcDist', {
-        address: this.state.address
+        destAddr: this.state.destAddr,
+        lat: this.props.coords.latitude,
+        longt: this.props.coords.longitude
       })
       .then(function (response) {
         console.log(response.data);
 
         browserHistory.push({
           pathname: '/dist',
-          name: "abc",
           state: response.data
-
         })
       })
       .catch(function (error) {
-        console.log(error);
+        console.log("error in request");
+        DemoObj.setState({
+          errors: true
+        })
       });
   }
 
   render() {
+
+    var disableFlag = 0;
+
+    if (this.props.isGeolocationAvailable) {
+      if (this.props.isGeolocationEnabled) {
+        if (this.props.coords) {
+          console.log("finally: " + this.props.coords.latitude);
+
+        } else {
+          disableFlag = 1;
+        }
+      } else {
+        disableFlag = 1;
+      }
+    } else {
+      disableFlag = 1;
+    }
+
     const inputProps = {
-      value: this.state.address,
+      value: this.state.destAddr,
       onChange: this.onChange,
       placeholder: 'Where do you wanna go?',
     }
 
     return (
         <div>
-          <div className="landing-page">
+
+          {disableFlag ? <div>enalbe please</div> :
+            <div className="landing-page">
                 <img className="img-icon" src="/images/cycle2.jpg"></img>
                 <div className="landing-search-bar input-group">
                     <PlacesAutocomplete inputProps={inputProps} />
                     <span className="input-group-btn">
                       <button className="lined thick" onClick={this.onButtonClicked}>How much time?</button>
                     </span>
-                </div>
 
+                </div>
+                {this.state.errors && <div className="error-msg">You gotta be kidding me</div>}
                 <div className="footer">
                   <div className="footer-container">
                     <span>Made with </span>
@@ -74,11 +99,19 @@ class Homepage extends React.Component {
                     <a href="https://github.com/gitpraj" target="_blank">Prajith</a>
                   </div>
                 </div>
-            </div>
+            </div>}
 
-          </div>
-    )
+        </div>
+
+
+    );
+
   }
 }
 
-export default Homepage;
+export default geolocated({
+  positionOptions: {
+    enableHighAccuracy: false,
+  },
+  userDecisionTimeout: 5000,
+})(Demo);
