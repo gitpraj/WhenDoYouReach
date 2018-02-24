@@ -6,6 +6,16 @@ import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-au
 import { browserHistory } from 'react-router'
 import axios from 'axios';
 
+
+// <div className="footer">
+//   <div className="footer-container">
+//     <span>Made with </span>
+//     <img className="tech-icon" src="http://formatjs.io/img/react.svg"/>
+//     <span> by </span>
+//     <a href="https://github.com/gitpraj" target="_blank">Prajith</a>
+//   </div>
+// </div>
+
 class Demo extends React.Component {
 
   constructor(props) {
@@ -96,14 +106,7 @@ class Demo extends React.Component {
 
                 </div>
 
-                <div className="footer">
-                  <div className="footer-container">
-                    <span>Made with </span>
-                    <img className="tech-icon" src="http://formatjs.io/img/react.svg"/>
-                    <span> by </span>
-                    <a href="https://github.com/gitpraj" target="_blank">Prajith</a>
-                  </div>
-                </div>
+
             </div>}
 
         </div>

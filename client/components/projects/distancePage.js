@@ -39,7 +39,9 @@ class DistancePage extends React.Component {
                     <img className="img-icon-distance" src="/images/cycle2.jpg"/>
                     <div className="dist-text">
                       <p>
-                          <span>{this.props.location.state.cycle.distance}</span> kms in <span>{this.props.location.state.cycle.duration}</span>
+                          {this.props.location.state.cycle.distance == "none" ? <div><h2>Sorry, cycling not possible</h2></div> :
+                          <div><span>{this.props.location.state.cycle.distance}</span> in <span>{this.props.location.state.cycle.duration}</span></div>
+                          }
                       </p>
                     </div>
                   </div>
@@ -47,7 +49,9 @@ class DistancePage extends React.Component {
                     <img className="img-icon-distance" src="/images/car.jpg"/>
                     <div className="dist-text">
                       <p>
-                          <span>{this.props.location.state.car.distance}</span> kms in <span>{this.props.location.state.car.duration}</span>
+                      {this.props.location.state.car.distance == "none" ? <div><h2>Sorry, driving not possible</h2></div> :
+                      <div><span>{this.props.location.state.car.distance}</span> in <span>{this.props.location.state.car.duration}</span></div>
+                      }
                       </p>
                     </div>
                   </div>
@@ -57,7 +61,9 @@ class DistancePage extends React.Component {
                     <img className="img-icon-distance" src="/images/train2.jpg"/>
                     <div className="dist-text">
                       <p>
-                          <span>{this.props.location.state.train.distance}</span> kms in <span>{this.props.location.state.train.duration}</span>
+                      {this.props.location.state.train.distance == "none" ? <div><h2>Sorry, trains don't go to this place</h2></div> :
+                      <div><span>{this.props.location.state.train.distance}</span> in <span>{this.props.location.state.train.duration}</span></div>
+                      }
                       </p>
                     </div>
                   </div>
@@ -65,7 +71,9 @@ class DistancePage extends React.Component {
                     <img className="img-icon-distance" src="/images/walk2.jpg"/>
                     <div className="dist-text">
                       <p>
-                          <span>{this.props.location.state.walk.distance}</span> kms in <span>{this.props.location.state.walk.duration}</span>
+                      {this.props.location.state.walk.distance == "none" ? <div><h2>Sorry, walking not possible</h2></div> :
+                      <div><span>{this.props.location.state.walk.distance}</span> in <span>{this.props.location.state.walk.duration}</span></div>
+                      }
                       </p>
                     </div>
                   </div>
