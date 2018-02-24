@@ -84,7 +84,9 @@ class Demo extends React.Component {
 
           {disableFlag ? <div><h2>Sorry, location has to be enabled.</h2></div> :
             <div className="landing-page">
-                <img className="img-icon" src="/images/cycle2.jpg"></img>
+                <div className="img-icon-div">
+                  <img className="img-icon" src="/images/cycle2.jpg"></img>
+                </div>
                 <div className="landing-search-bar">
                       {this.state.errors && <div className="error-msg"><p>You gotta be kidding. Too far mate!!</p></div>}
                       <PlacesAutocomplete inputProps={inputProps} />

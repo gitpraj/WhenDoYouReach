@@ -7,96 +7,262 @@ button:focus {
   outline: none;
 }
 
-.landing-page {
-  background-color: #19871c;
-  display: block;
-  height: 100vh;
-}
-
-.landing-search-bar {
-  position: relative;
-  /* left: 25%; */
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  top: 25%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border-radius: 15px 50px;
-}
-
-.landing-search-bar input {
-  border-radius: 15px 50px;
-  height: 50px;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.landing-search-bar button {
-  align-self: center;
-  background: #da3434;
-  padding: 1rem 1rem;
-  margin: 0 1rem;
-  transition: all .5s ease;
-  color: #41403E;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  outline: none;
-  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  position: relative;
-  margin-top: 2%;
-  text-align: center;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  z-index: -1;
-  /*
+@media (max-width: 400px) {
+  .img-icon {
+    margin-top: 5%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .error-msg {
+    position: relative;
+    display: block;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .landing-search-bar {
+    position: relative;
+    /* left: 25%; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 15px 50px;
+  }
+  .landing-search-bar input {
+    border-radius: 15px 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .landing-search-bar button {
+    align-self: center;
+    background: #da3434;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    transition: all .5s ease;
+    color: #41403E;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    position: relative;
+    margin-top: 2%;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -1;
+    /*
         Above is shorthand for:
         border-top-left-radius: 255px 15px;
         border-top-right-radius: 15px 225px;
         border-bottom-right-radius: 225px 15px;
         border-bottom-left-radius:15px 255px;
         */
+  }
+  .landing-search-bar button:hover {
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+  }
+  .landing-search-bar button.lined.thick {
+    border: solid 7px #41403E;
+  }
+  .landing-search-bar button.dotted.thick {
+    border: dotted 5px #41403E;
+  }
+  .landing-search-bar button.dashed.thick {
+    border: dashed 5px #41403E;
+  }
+  .landing-search-bar button.lined.thin {
+    border: solid 2px #41403E;
+  }
+  .landing-search-bar button.dotted.thin {
+    border: dotted 2px #41403E;
+  }
+  .landing-search-bar button.dashed.thin {
+    border: dashed 2px #41403E;
+  }
 }
 
-.landing-search-bar button:hover {
-  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+@media (min-width: 400px) and (max-width: 768px) {
+  .img-icon {
+    margin-top: 5%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .error-msg {
+    position: relative;
+    display: block;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .landing-search-bar {
+    position: relative;
+    /* left: 25%; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 15px 50px;
+  }
+  .landing-search-bar input {
+    border-radius: 15px 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .landing-search-bar button {
+    align-self: center;
+    background: #da3434;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    transition: all .5s ease;
+    color: #41403E;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    position: relative;
+    margin-top: 2%;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -1;
+    /*
+        Above is shorthand for:
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        border-bottom-right-radius: 225px 15px;
+        border-bottom-left-radius:15px 255px;
+        */
+  }
+  .landing-search-bar button:hover {
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+  }
+  .landing-search-bar button.lined.thick {
+    border: solid 7px #41403E;
+  }
+  .landing-search-bar button.dotted.thick {
+    border: dotted 5px #41403E;
+  }
+  .landing-search-bar button.dashed.thick {
+    border: dashed 5px #41403E;
+  }
+  .landing-search-bar button.lined.thin {
+    border: solid 2px #41403E;
+  }
+  .landing-search-bar button.dotted.thin {
+    border: dotted 2px #41403E;
+  }
+  .landing-search-bar button.dashed.thin {
+    border: dashed 2px #41403E;
+  }
 }
 
-.landing-search-bar button.lined.thick {
-  border: solid 7px #41403E;
-}
-
-.landing-search-bar button.dotted.thick {
-  border: dotted 5px #41403E;
-}
-
-.landing-search-bar button.dashed.thick {
-  border: dashed 5px #41403E;
-}
-
-.landing-search-bar button.lined.thin {
-  border: solid 2px #41403E;
-}
-
-.landing-search-bar button.dotted.thin {
-  border: dotted 2px #41403E;
-}
-
-.landing-search-bar button.dashed.thin {
-  border: dashed 2px #41403E;
-}
-
-.img-icon {
-  top: 10%;
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 40%;
-  border-radius: 50%;
+@media (min-width: 768px) {
+  .img-icon {
+    margin-top: 5%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .error-msg {
+    position: relative;
+    display: block;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .landing-search-bar {
+    position: relative;
+    /* left: 25%; */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 15px 50px;
+  }
+  .landing-search-bar input {
+    border-radius: 15px 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .landing-search-bar button {
+    align-self: center;
+    background: #da3434;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    transition: all .5s ease;
+    color: #41403E;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    position: relative;
+    margin-top: 2%;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -1;
+    /*
+        Above is shorthand for:
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        border-bottom-right-radius: 225px 15px;
+        border-bottom-left-radius:15px 255px;
+        */
+  }
+  .landing-search-bar button:hover {
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+  }
+  .landing-search-bar button.lined.thick {
+    border: solid 7px #41403E;
+  }
+  .landing-search-bar button.dotted.thick {
+    border: dotted 5px #41403E;
+  }
+  .landing-search-bar button.dashed.thick {
+    border: dashed 5px #41403E;
+  }
+  .landing-search-bar button.lined.thin {
+    border: solid 2px #41403E;
+  }
+  .landing-search-bar button.dotted.thin {
+    border: dotted 2px #41403E;
+  }
+  .landing-search-bar button.dashed.thin {
+    border: dashed 2px #41403E;
+  }
 }
 
 .button-search {
@@ -115,8 +281,7 @@ button:focus {
 }
 
 .footer {
-  position: absolute;
-  bottom: 3%;
+  position: relative;
   width: 100%;
   font-size: 20px;
   color: black;
@@ -125,7 +290,7 @@ button:focus {
 .footer .footer-container {
   position: relative;
   display: block;
-  width: 230px;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
 }
@@ -137,13 +302,4 @@ button:focus {
 
 .footer .footer-container a:hover {
   color: #e5e82a;
-}
-
-.error-msg p {
-  position: relative;
-  display: block;
-  top: 20%;
-  text-align: center;
-  font-size: 3rem;
-  font-family: "Times New Roman", Times, serif;
 }
